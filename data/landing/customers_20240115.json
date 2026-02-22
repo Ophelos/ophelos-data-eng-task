@@ -1,0 +1,272 @@
+[
+  {
+    "customer_id": "c_301",
+    "merchant_id": "m_001",
+    "email": "alice.thomas@example.com",
+    "first_name": "Alice",
+    "last_name": "Thomas",
+    "country": "PT",
+    "created_at": "2023-02-14"
+  },
+  {
+    "customer_id": "c_302",
+    "merchant_id": "m_008",
+    "email": "bob.hill@example.com",
+    "first_name": "Bob",
+    "last_name": "Hill",
+    "country": "FR",
+    "created_at": "2023-04-21"
+  },
+  {
+    "customer_id": "c_303",
+    "merchant_id": "m_003",
+    "email": "charlie.baker@example.com",
+    "first_name": "Charlie",
+    "last_name": "Baker",
+    "country": "IT",
+    "created_at": "2023-03-02"
+  },
+  {
+    "customer_id": "c_304",
+    "merchant_id": "m_008",
+    "email": "diana.hill@example.com",
+    "first_name": "Diana",
+    "last_name": "Hill",
+    "country": "DE",
+    "created_at": "2023-08-20"
+  },
+  {
+    "customer_id": "c_305",
+    "merchant_id": "m_012",
+    "email": "eve.martin@example.com",
+    "first_name": "Eve",
+    "last_name": "Martin",
+    "country": "PT",
+    "created_at": "2023-03-16"
+  },
+  {
+    "customer_id": "c_306",
+    "merchant_id": "m_001",
+    "email": "frank.hill@example.com",
+    "first_name": "Frank",
+    "last_name": "Hill",
+    "country": "FR",
+    "created_at": "2023-07-20"
+  },
+  {
+    "customer_id": "c_307",
+    "merchant_id": "m_004",
+    "email": "grace.roberts@example.com",
+    "first_name": "Grace",
+    "last_name": "Roberts",
+    "country": "ES",
+    "created_at": "2023-03-11"
+  },
+  {
+    "customer_id": "c_308",
+    "merchant_id": "m_011",
+    "email": "hank.wilson@example.com",
+    "first_name": "Hank",
+    "last_name": "Wilson",
+    "country": "GB",
+    "created_at": "2023-05-12"
+  },
+  {
+    "customer_id": "c_309",
+    "merchant_id": "m_005",
+    "email": "ivy.hall@example.com",
+    "first_name": "Ivy",
+    "last_name": "Hall",
+    "country": "IE",
+    "created_at": "2023-04-12"
+  },
+  {
+    "customer_id": "c_310",
+    "merchant_id": "m_007",
+    "email": "jack.adams@example.com",
+    "first_name": "Jack",
+    "last_name": "Adams",
+    "country": "PT",
+    "created_at": "2023-06-08"
+  },
+  {
+    "customer_id": "c_311",
+    "merchant_id": "m_002",
+    "email": "karen.hill@example.com",
+    "first_name": "Karen",
+    "last_name": "Hill",
+    "country": "IE",
+    "created_at": "2023-11-23"
+  },
+  {
+    "customer_id": "c_312",
+    "merchant_id": "m_015",
+    "email": "leo.jones@example.com",
+    "first_name": "Leo",
+    "last_name": "Jones",
+    "country": "IT",
+    "created_at": "2023-04-27"
+  },
+  {
+    "customer_id": "c_313",
+    "merchant_id": "m_011",
+    "email": "mona.wilson@example.com",
+    "first_name": "Mona",
+    "last_name": "Wilson",
+    "country": "IT",
+    "created_at": "2023-01-06"
+  },
+  {
+    "customer_id": "c_314",
+    "merchant_id": "m_001",
+    "email": "nick.wilson@example.com",
+    "first_name": "Nick",
+    "last_name": "Wilson",
+    "country": "US",
+    "created_at": "2023-09-20"
+  },
+  {
+    "customer_id": "c_315",
+    "merchant_id": "m_001",
+    "email": "olivia.wright@example.com",
+    "first_name": "Olivia",
+    "last_name": "Wright",
+    "country": "BE",
+    "created_at": "2023-08-11"
+  },
+  {
+    "customer_id": "c_316",
+    "merchant_id": "m_013",
+    "email": "paul.clarke@example.com",
+    "first_name": "Paul",
+    "last_name": "Clarke",
+    "country": "IT",
+    "created_at": "2023-04-28"
+  },
+  {
+    "customer_id": "c_317",
+    "merchant_id": "m_013",
+    "email": "quinn.taylor@example.com",
+    "first_name": "Quinn",
+    "last_name": "Taylor",
+    "country": "IT",
+    "created_at": "2023-10-23"
+  },
+  {
+    "customer_id": "c_318",
+    "merchant_id": "m_012",
+    "email": "rosa.evans@example.com",
+    "first_name": "Rosa",
+    "last_name": "Evans",
+    "country": "PT",
+    "created_at": "2023-03-14"
+  },
+  {
+    "customer_id": "c_319",
+    "merchant_id": "m_013",
+    "email": "sam.brown@example.com",
+    "first_name": "Sam",
+    "last_name": "Brown",
+    "country": "GB",
+    "created_at": "2023-10-07"
+  },
+  {
+    "customer_id": "c_320",
+    "merchant_id": "m_006",
+    "email": "tina.clarke@example.com",
+    "first_name": "Tina",
+    "last_name": "Clarke",
+    "country": "GB",
+    "created_at": "2023-06-17"
+  },
+  {
+    "customer_id": "c_321",
+    "merchant_id": "m_012",
+    "email": "uma.walker@example.com",
+    "first_name": "Uma",
+    "last_name": "Walker",
+    "country": "ES",
+    "created_at": "2023-03-17"
+  },
+  {
+    "customer_id": "c_322",
+    "merchant_id": "m_012",
+    "email": "victor.taylor@example.com",
+    "first_name": "Victor",
+    "last_name": "Taylor",
+    "country": "NL",
+    "created_at": "2023-12-03"
+  },
+  {
+    "customer_id": "c_323",
+    "merchant_id": "m_001",
+    "email": "wendy.walker@example.com",
+    "first_name": "Wendy",
+    "last_name": "Walker",
+    "country": "DE",
+    "created_at": "2023-09-30"
+  },
+  {
+    "customer_id": "c_324",
+    "merchant_id": "m_002",
+    "email": "xander.martin@example.com",
+    "first_name": "Xander",
+    "last_name": "Martin",
+    "country": "US",
+    "created_at": "2023-09-25"
+  },
+  {
+    "customer_id": "c_325",
+    "merchant_id": "m_002",
+    "email": "yara.walker@example.com",
+    "first_name": "Yara",
+    "last_name": "Walker",
+    "country": "BE",
+    "created_at": "2023-02-20"
+  },
+  {
+    "customer_id": "c_326",
+    "merchant_id": "m_015",
+    "email": "zach.adams@example.com",
+    "first_name": "Zach",
+    "last_name": "Adams",
+    "country": "NL",
+    "created_at": "2023-03-21"
+  },
+  {
+    "customer_id": "c_327",
+    "merchant_id": "m_012",
+    "email": "bella.wilson@example.com",
+    "first_name": "Bella",
+    "last_name": "Wilson",
+    "country": "IT",
+    "created_at": "2023-12-18"
+  },
+  {
+    "customer_id": "c_328",
+    "merchant_id": "m_002",
+    "email": "cody.wright@example.com",
+    "first_name": "Cody",
+    "last_name": "Wright",
+    "country": "BE",
+    "created_at": "2023-05-13"
+  },
+  {
+    "customer_id": "c_329",
+    "merchant_id": "m_015",
+    "email": "dina.green@example.com",
+    "first_name": "Dina",
+    "last_name": "Green",
+    "country": "DE",
+    "created_at": "2023-04-20"
+  },
+  {
+    "customer_id": "c_330",
+    "merchant_id": "m_015",
+    "email": "eli.lee@example.com",
+    "first_name": "Eli",
+    "last_name": "Lee",
+    "country": "IE",
+    "created_at": "2023-12-21"
+  }
+]
