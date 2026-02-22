@@ -1,8 +1,11 @@
 .PHONY: setup teardown run-pipeline run-analytics test verify reset query-report psql
 
+# Use docker compose v2 plugin if available, fall back to docker-compose v1
+DOCKER_COMPOSE := $(shell docker compose version >/dev/null 2>&1 && echo "docker compose" || echo "docker-compose")
+
 # One command to get everything running
 setup:
-	docker compose up -d --wait
+	$(DOCKER_COMPOSE) up -d --wait
 	uv sync
 	@echo "✓ Database ready on localhost:5433"
 	@echo "✓ Python dependencies installed"
@@ -25,7 +28,7 @@ run-pipeline:
 
 # Run analytics SQL and show results
 run-analytics:
-	@docker compose exec -T db psql -U pipeline -d payments \
+	@$(DOCKER_COMPOSE) exec -T db -- psql -U pipeline -d payments \
 		-f /analytics/daily_summary.sql \
 		-f /analytics/weekly_merchant_report.sql \
 		-f /analytics/merchant_performance.sql
@@ -33,12 +36,12 @@ run-analytics:
 
 # Quick way to see the weekly report
 query-report:
-	@docker compose exec -T db psql -U pipeline -d payments \
+	@$(DOCKER_COMPOSE) exec -T db -- psql -U pipeline -d payments \
 		-c "SELECT * FROM analytics.weekly_merchant_report ORDER BY week DESC, merchant_name LIMIT 20;"
 
 # Open an interactive psql shell
 psql:
-	docker compose exec db psql -U pipeline -d payments
+	$(DOCKER_COMPOSE) exec db -- psql -U pipeline -d payments
 
 # Run test suite
 test:
@@ -46,11 +49,11 @@ test:
 
 # Tear down everything
 teardown:
-	docker compose down -v
+	$(DOCKER_COMPOSE) down -v
 
-# Reset database to clean state (re-seed)
+# Reset database to clean state (re-sed)
 reset:
-	docker compose down -v
+	$(DOCKER_COMPOSE) down -v
 	rm -f processed_files.log
-	docker compose up -d --wait
+	$(DOCKER_COMPOSE) up -d --wait
 	@echo "✓ Database reset to initial state."
