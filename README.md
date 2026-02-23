@@ -20,40 +20,42 @@ sql/analytics/         → Reporting views
 ## Prerequisites
 
 - [Docker](https://docs.docker.com/get-docker/) (for PostgreSQL)
-- [uv](https://docs.astral.sh/uv/getting-started/installation/) (Python package manager) — `curl -LsSf https://astral.sh/uv/install.sh | sh`
+- [uv](https://docs.astral.sh/uv/getting-started/installation/) (Python package manager)
+  - Mac/Linux: `curl -LsSf https://astral.sh/uv/install.sh | sh`
+  - Windows: `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
 
 ## Quick Start
 
 ```bash
 # Start database and install dependencies
-make setup
+uv run tasks.py setup
 
 # Verify everything is working
-make verify
+uv run tasks.py verify
 
 # Run the ingestion pipeline
-make run-pipeline
+uv run tasks.py run-pipeline
 
 # Create/refresh analytics views
-make run-analytics
+uv run tasks.py run-analytics
 
 # View the weekly merchant report
-make query-report
+uv run tasks.py query-report
 ```
 
 ## Available Commands
 
 | Command | Description |
 |---------|-------------|
-| `make setup` | Start Postgres, install Python deps |
-| `make verify` | Check database connectivity and data |
-| `make run-pipeline` | Run the ingestion pipeline |
-| `make run-analytics` | Refresh analytics views |
-| `make query-report` | Display weekly merchant report |
-| `make psql` | Open interactive psql shell |
-| `make test` | Run the test suite |
-| `make reset` | Reset database to initial seed state |
-| `make teardown` | Stop and remove all containers |
+| `uv run tasks.py setup` | Start Postgres, install Python deps |
+| `uv run tasks.py verify` | Check database connectivity and data |
+| `uv run tasks.py run-pipeline` | Run the ingestion pipeline |
+| `uv run tasks.py run-analytics` | Refresh analytics views |
+| `uv run tasks.py query-report` | Display weekly merchant report |
+| `uv run tasks.py psql` | Open interactive psql shell |
+| `uv run tasks.py test` | Run the test suite |
+| `uv run tasks.py reset` | Reset database to initial seed state |
+| `uv run tasks.py teardown` | Stop and remove all containers |
 
 ## Database
 
@@ -89,7 +91,7 @@ The ingestion pipeline (`src/pipeline/`) processes files from `data/landing/`:
 
 ```bash
 # Run with default settings
-make run-pipeline
+uv run tasks.py run-pipeline
 
 # Or directly
 uv run python -m pipeline.main
@@ -110,7 +112,7 @@ SQL views in `sql/analytics/`:
 uv sync --group dev
 
 # Run tests
-make test
+uv run tasks.py test
 ```
 
 ## Project Structure
@@ -134,6 +136,6 @@ make test
 ├── tests/                    ← Test suite
 ├── scripts/                  ← Data generation
 ├── docker-compose.yml
-├── Makefile
+├── tasks.py                 ← Task runner (cross-platform)
 └── pyproject.toml
 ```
